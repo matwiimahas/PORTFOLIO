@@ -101,24 +101,9 @@ async function loadGithubProfile() {
 
   try {
     const [userResponse, reposResponse, eventsResponse] = await Promise.all([
-      fetch(`https://api.github.com/users/${githubUsername}`, {
-        headers: {
-            Authorization: `Bearer ${token_key}`,
-            Accept: 'application/vnd.github+json'
-        }
-    }),
-      fetch(`https://api.github.com/users/${githubUsername}/repos?per_page=100&sort=updated`, {
-        headers: {
-            Authorization: `Bearer ${token_key}`,
-            Accept: 'application/vnd.github+json'
-        }
-    }),
-      fetch(`https://api.github.com/users/${githubUsername}/events/public?per_page=100`, {
-        headers: {
-            Authorization: `Bearer ${token_key}`,
-            Accept: 'application/vnd.github+json'
-        }
-    })
+      fetch(`https://api.github.com/users/${githubUsername}`),
+      fetch(`https://api.github.com/users/${githubUsername}/repos?per_page=100&sort=updated`),
+      fetch(`https://api.github.com/users/${githubUsername}/events/public?per_page=100`)
     ]);
 
     if (!userResponse.ok || !reposResponse.ok) {
