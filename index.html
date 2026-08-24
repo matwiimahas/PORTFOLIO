@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,10 @@
 <body>
 
     <header class="navbar">
-        <div class="logo">Matviy Mahas</div>
+        <nav>
+            <img id="githubAvatar" src="" alt="">
+            <div class="logo" id="githubUsername">Matviy Mahas</div>
+        </nav>
 
         <nav>
             <a href="#home">Головна</a>
@@ -28,7 +31,7 @@
             <div class="hero-content">
                 <p class="small-title">👋 Вітаю! Я</p>
 
-                <h1>Матвій</h1>
+                <h1 id="githubDisplayName">Матвій</h1>
 
                 <h2>Programmer & Game Developer</h2>
 
@@ -50,12 +53,7 @@
                     <span></span>
                 </div>
 
-                <pre><code><span class="purple">const</span> developer = {
-    name: <span class="green">"Matviy"</span>,
-    role: <span class="green">"Programmer"</span>,
-    passion: <span class="green">"Games & Web"</span>,
-    status: <span class="green">"Creating..."</span>
-};</code></pre>
+                <pre><code id="codecard"></code></pre>
             </div>
         </section>
 
@@ -92,6 +90,42 @@
                 </div>
             </div>
         </section>
+
+        <!-- <section id="github" class="section">
+            <p class="section-label">02 — GITHUB</p>
+            <h2>GitHub profile</h2>
+
+            <article class="github-card" aria-live="polite">
+                <p id="githubLoading">Завантаження GitHub-профілю…</p>
+                <p id="githubError" class="error" hidden></p>
+
+                <div id="githubProfile" hidden>
+                <div class="github-head">
+                    <img id="githubAvatar" src="" alt="">
+                    <div>
+                    <a id="githubLink" href="https://github.com/Matviy7878" target="_blank">@Matviy7878</a>
+                    <h3 id="githubName">Matviy7878</h3>
+                    <p id="githubBio"></p>
+                    </div>
+
+                    <span id="githubStatus" class="status">—</span>
+                </div>
+
+                <div class="github-details">
+                    <div><span>Username</span><strong id="githubUsername">Matviy7878</strong></div>
+                    <div><span>Display Name</span><strong id="githubDisplayName">—</strong></div>
+                    <div><span>Email</span><strong id="githubEmail">—</strong></div>
+                    <div><span>Location</span><strong id="githubLocation">—</strong></div>
+                    <div><span>Followers</span><strong id="githubFollowers">—</strong></div>
+                    <div><span>Following</span><strong id="githubFollowing">—</strong></div>
+                    <div><span>Repositories</span><strong id="githubRepositories">—</strong></div>
+                    <div><span>Last active time</span><strong id="githubLastActive">—</strong></div>
+                </div>
+
+                <p id="githubActivityNote" class="github-note"></p>
+                </div>
+            </article>
+            </section> -->
 
         <section id="skills" class="section">
             <p class="section-label">02 — SKILLS</p>
@@ -130,8 +164,8 @@
                 </div>
 
                 <div class="skill-card">
-                    <div class="skill-icon">⛏️ - ⭐⭐⭐</div>
-                    <h3>Minecraft</h3>
+                    <div class="skill-icon">⛏️</div>
+                    <h3>Minecraft - ⭐⭐⭐</h3>
                     <p>Сервери, механіки та командні системи. Половину Bedwars зможу зробити</p>
                 </div>
 
@@ -159,579 +193,14 @@
             </div>
             -->
 
+            <h1>Websites</h1>
+            <div id="websitesList" class="project-list"></div>
+
             <h1>Featured Projects</h1>
-
-            <div class="project-list">
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Windows12Turbowarp.png" alt="Windows 12.21" style="width: 300px;">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-type">TurboWarp</span>
-
-                        <h3>Windows 12.21</h3>
-
-                        <p>
-                            Інтерактивна операційна система,
-                            створена у TurboWarp.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>TurboWarp</span>
-                            <span>Featured</span>
-                            <span>2D</span>
-                            <span>Simulation</span>
-                            <span>Scratch</span>
-                        </div>
-
-                        <div class="project-buttons">
-                            <a href="https://matviy-7878.itch.io/windows-122" target="_blank" class="button primary">
-                                ▶ Play on Itch Io
-                            </a>
-
-                            <a href="https://gamejolt.com/games/windows12-21/1023497" target="_blank" class="button primary">
-                                ▶ Play on Game Jolt
-                            </a>
-
-                            <a href="https://scratch.mit.edu/projects/1119177848" target="_blank" class="button secondary">
-                                ▶ Old version on Scratch <!--💻 Code (GitHub) -->
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="RoomsGoodRealistic.png" alt="ROOMS: Good Realistic" style="width: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-type">Roblox</span>
-
-                        <h3>ROOMS: Good Realistic</h3>
-
-                        <p>
-                            Horror experience у Roblox з унікальними сутностями,
-                            предметами, режимами та власними ігровими механіками.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Lua</span>
-                            <span>Featured</span>
-                            <span>3D and 2D</span>
-                            <span>Horror Survival</span>
-                            <span>Updates active</span>
-                        </div>
-
-                        <div class="project-buttons">
-                            <a href="https://www.roblox.com/games/101475124784675/Rooms-Good-realistic" target="_blank" class="button primary">
-                                ▶ Play on Roblox
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="ZombieWar.png" alt="Zombie War" style="width: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-type">Scratch</span>
-
-                        <h3>Zombie War (V2)</h3>
-
-                        <p>
-                            Динамічна zombie-гра з хвилями ворогів, зброєю та битвами за виживання.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Scratch</span>
-                            <span>Featured</span>
-                            <span>2D</span>
-                            <span>Action</span>
-                        </div>
-
-                        <div class="project-buttons">
-                            <a href="https://scratch.mit.edu/projects/1107444831/" target="_blank" class="button primary">
-                                ▶ Play on Scratch
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
+            <div id="featuredList" class="project-list"></div>
 
             <h1>Unfeatured Projects</h1>
-
-            <div class="project-list">
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="SuperXCars.png" alt="Super-X Cars" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-type">Turbowarp</span>
-
-                        <h3>Super-X Cars: Night City Driving with Extreme Powers (V1.0.5)</h3>
-
-                        <p>
-                            Гоночний проєкт у стилі arcade racing, що поєднує нічне міське середовище, швидкі автомобілі та систему
-                            екстремальних здібностей. Гравці можуть брати участь у динамічних заїздах, використовувати особливі сили
-                            та випробовувати різні автомобілі.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Turbowarp</span>
-                            <span>Multiplayer</span>
-                            <span>2D</span>
-                            <span>Racing</span>
-                        </div>
-
-                        <div class="project-buttons">
-                            <a href="https://gamejolt.com/games/SuperXCars-NightCityDrivingwithXtremePowersRelease/1032973" target="_blank" class="button primary">
-                                ▶ Play on Game Jolt
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="GeometryDashOnScratch.png" alt="Geometry Dash" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-type">Scratch</span>
-
-                        <h3>Geometry Dash</h3>
-
-                        <p>
-                            2D rhythm-platformer у Scratch, що відтворює основні механіки Geometry Dash: автоматичний рух,
-                            стрибки, перешкоди, рівні та синхронізацію геймплею з музикою.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Scratch</span>
-                            <span>Outdated</span>
-                            <span>2D</span>
-                            <span>Platformer</span>
-                        </div>
-
-                        <div class="project-buttons">
-                            <a href="https://scratch.mit.edu/projects/1251236952/" target="_blank" class="button primary">
-                                ▶ Play on Scratch
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="WindowsTD.png" alt="Windows TD" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-type">Scratch</span>
-
-                        <h3>Windows Tower Defence</h3>
-
-                        <p>
-                            Windows Tower Defense — битва операційних систем! Команда Windows захищає свою систему від
-                            хвиль Linux та Windows 9, розміщуючи захисні вежі, покращуючи їх і відбиваючи атаки ворогів.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Scratch</span>
-                            <span>Outdated</span>
-                            <span>2D</span>
-                            <span>Tower Defence</span>
-                        </div>
-
-                        <div class="project-buttons">
-                            <a href="https://gamejolt.com/games/WindowsTowerDefense/1028459" target="_blank" class="button primary">
-                                ▶ Play on Game Jolt
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Terraria.png" alt="Terraria simulator" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-type">Scratch</span>
-
-                        <h3>Terraria simulator</h3>
-
-                        <p>
-                            2D sandbox-симулятор, натхненний Terraria, з дослідженням світу, видобуванням ресурсів,
-                            предметами та різними механіками виживання.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Scratch</span>
-                            <span>Outdated</span>
-                            <span>2D</span>
-                            <span>Clicker</span>
-                        </div>
-
-                        <div class="project-buttons">
-                            <a href="https://scratch.mit.edu/projects/1267323226/" target="_blank" class="button primary">
-                                ▶ Play on Scratch
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Milk.png" alt="Milk" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-type">Scratch</span>
-
-                        <h3>МОЛОКО (УСІ ЗАКІНЧЕННЯ)</h3>
-
-                        <p>
-                            Інтерактивна гра з випадковими сценаріями та унікальними анімаціями, де головне завдання
-                            — знайти всі закінчення.
-
-                            ⚠️ WARNING: THIS PAGE CONTAINS UKRAINIAN LANGUAGE! 🇺🇦
-                            If you don't understand Ukrainian, please use a translator to translate the page.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Scratch</span>
-                            <span>Outdated</span>
-                            <span>2D</span>
-                            <span>Animations</span>
-                        </div>
-
-                        <div class="project-buttons">
-                            <a href="https://scratch.mit.edu/projects/1267323226/" target="_blank" class="button primary">
-                                ▶ Play on Scratch
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="GigaLostInSpace.png" alt="Giga Lost In Space" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-type">Scratch</span>
-
-                        <h3>Giga загубився у космосі</h3>
-
-                        <p>
-                            Моя перша без помилок платформер гра у скратчі де потрібно втекти космос і
-                            вижити ворогів.
-
-                            ⚠️ WARNING: THIS PAGE CONTAINS UKRAINIAN LANGUAGE! 🇺🇦
-                            If you don't understand Ukrainian, please use a translator to translate the page.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Scratch</span>
-                            <span>Outdated</span>
-                            <span>2D</span>
-                            <span>Platformer</span>
-                        </div>
-
-                        <div class="project-buttons">
-                            <a href="https://scratch.mit.edu/projects/1264371862/" target="_blank" class="button primary">
-                                ▶ Play on Scratch
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <h1>Websites</h1>
-
-            <div class="project-list">
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Локалізація</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/Localization/#en" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Банкомат</h3>
-
-                        <p>
-                            ⚠️ WARNING: THIS PAGE CONTAINS UKRAINIAN LANGUAGE! 🇺🇦
-                            If you don't understand Ukrainian, please use a translator to translate the page.
-                        </p>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/Bank/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Машина кави</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/coffee-machine/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Секундомір</h3>
-
-                        <p>
-                            ⚠️ WARNING: THIS PAGE CONTAINS UKRAINIAN LANGUAGE! 🇺🇦
-                            If you don't understand Ukrainian, please use a translator to translate the page.
-                        </p>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/stopwatch/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Кликер</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/clicker/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Rick & Morty Проєкт</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/rick-n-morty/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>yantarne.fm</h3>
-
-                        <p>
-                            ⚠️ WARNING: THIS PAGE CONTAINS UKRAINIAN LANGUAGE! 🇺🇦
-                            If you don't understand Ukrainian, please use a translator to translate the page.
-                        </p>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/yantarne/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Конвертер Валют</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/converter/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Додаток Погода</h3>
-
-                        <p>
-                            ⚠️ WARNING: THIS PAGE CONTAINS UKRAINIAN LANGUAGE! 🇺🇦
-                            If you don't understand Ukrainian, please use a translator to translate the page.
-                        </p>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/weather-app/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Шрифтування</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/chypher-project/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Theme проєкт</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/theme-customizer/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Pizza проєкт</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/pizza-project/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>To Do Project</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/to-do/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Змагання кульок</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/ball-race/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Віртуальна клавіатура</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/visual-keyboard/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="Images/.png" alt="Зображення скоро" style="height: 170px;">
-                    </div>
-
-                    <div class="project-content">
-                        <h3>Чорне і Біле</h3>
-
-                        <div class="project-buttons">
-                            <a href="https://matwiimahas.github.io/black-white/" target="_blank" class="button primary">
-                                ▶ Run
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
+            <div id="unfeaturedList" class="project-list"></div>
         </section>
 
         <section id="contact" class="section contact">
