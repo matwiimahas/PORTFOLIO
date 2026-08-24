@@ -1,0 +1,151 @@
+{
+  "featured": [
+    {
+      "place": 1,
+      "img_url": "Windows12Turbowarp.png",
+      "project_type": "TurboWarp",
+      "name": "Windows 12.21",
+      "desc": "Інтерактивна операційна система, створена у TurboWarp.",
+      "tags": ["TurboWarp", "Featured", "2D", "Simulation", "Scratch", "UA and EN"],
+      "buttons": [
+        {
+          "href": "https://matviy-7878.itch.io/windows-122",
+          "type": "primary",
+          "button_text": "▶ Play on Itch Io"
+        },
+        {
+          "href": "https://gamejolt.com/games/windows12-21/1023497",
+          "type": "primary",
+          "button_text": "▶ Play on Game Jolt"
+        },
+        {
+          "href": "https://scratch.mit.edu/projects/1119177848",
+          "type": "secondary",
+          "button_text": "▶ Old version on Scratch"
+        }
+      ]
+    },
+    {
+      "place": 2,
+      "img_url": "RoomsGoodRealistic.png",
+      "project_type": "Roblox",
+      "name": "⚠️ ROOMS: Good Realistic",
+      "desc": "Horror experience у Roblox з унікальними сутностями, предметами, режимами та власними ігровими механіками.",
+      "tags": ["Lua", "Featured", "3D and 2D", "Horror Survival", "Updates active", "EN ⚠️"],
+      "buttons": [
+        {
+          "href": "https://www.roblox.com/games/101475124784675/Rooms-Good-realistic",
+          "type": "primary",
+          "button_text": "▶ Play on Roblox"
+        }
+      ]
+    },
+    {
+      "place": 3,
+      "img_url": "ZombieWar.png",
+      "project_type": "Scratch",
+      "name": "Zombie War (V2)",
+      "desc": "Динамічна zombie-гра з хвилями ворогів, зброєю та битвами за виживання.",
+      "tags": ["Scratch", "Featured", "2D", "Action", "UA and EN"],
+      "buttons": [
+        {
+          "href": "https://scratch.mit.edu/projects/1107444831/",
+          "type": "primary",
+          "button_text": "▶ Play on Scratch"
+        }
+      ]
+    }
+  ],
+  "unfeatured": [
+    {
+      "place": 1,
+      "img_url": "SuperXCars.png",
+      "project_type": "TurboWarp",
+      "name": "⚠️ Super-X Cars: Night City Driving with Extreme Powers (V1.0.5)",
+      "desc": "Гоночний проєкт у стилі arcade racing, що поєднує нічне міське середовище, швидкі автомобілі та систему екстремальних здібностей.",
+      "tags": ["TurboWarp", "Multiplayer", "2D", "Racing", "EN ⚠️"],
+      "buttons": [
+        {
+          "href": "https://gamejolt.com/games/SuperXCars-NightCityDrivingwithXtremePowersRelease/1032973",
+          "type": "primary",
+          "button_text": "▶ Play on Game Jolt"
+        }
+      ]
+    },
+    {
+      "place": 2,
+      "img_url": "GeometryDashOnScratch.png",
+      "project_type": "Scratch",
+      "name": "⚠️ Geometry Dash",
+      "desc": "2D rhythm-platformer у Scratch з автоматичним рухом, стрибками, перешкодами, рівнями та синхронізацією геймплею з музикою.",
+      "tags": ["Scratch", "Outdated", "2D", "Platformer", "UA ⚠️"],
+      "buttons": [
+        {
+          "href": "https://scratch.mit.edu/projects/1251236952/",
+          "type": "primary",
+          "button_text": "▶ Play on Scratch"
+        }
+      ]
+    },
+    {
+      "place": 3,
+      "img_url": "WindowsTD.png",
+      "project_type": "Scratch",
+      "name": "Windows Tower Defence",
+      "desc": "Windows Tower Defense — битва операційних систем із захисними вежами, покращеннями та хвилями ворогів.",
+      "tags": ["Scratch", "Outdated", "2D", "Tower Defence", "UA and EN"],
+      "buttons": [
+        {
+          "href": "https://gamejolt.com/games/WindowsTowerDefense/1028459",
+          "type": "primary",
+          "button_text": "▶ Play on Game Jolt"
+        }
+      ]
+    },
+    {
+      "place": 4,
+      "img_url": "Terraria.png",
+      "project_type": "Scratch",
+      "name": "Terraria simulator",
+      "desc": "2D sandbox-симулятор, натхненний Terraria, з дослідженням світу, ресурсами, предметами та механіками виживання.",
+      "tags": ["Scratch", "Outdated", "2D", "Clicker", "UA and EN"],
+      "buttons": [
+        {
+          "href": "https://scratch.mit.edu/projects/1267323226/",
+          "type": "primary",
+          "button_text": "▶ Play on Scratch"
+        }
+      ]
+    },
+    {
+      "place": 5,
+      "img_url": "Milk.png",
+      "project_type": "Scratch",
+      "name": "⚠️ МОЛОКО (УСІ ЗАКІНЧЕННЯ)",
+      "desc": "Інтерактивна гра з випадковими сценаріями та унікальними анімаціями, де головне завдання — знайти всі закінчення.",
+      "tags": ["Scratch", "Outdated", "2D", "Animations", "UA ⚠️"],
+      "buttons": [
+        {
+          "href": "https://scratch.mit.edu/projects/1267323226/",
+          "type": "primary",
+          "button_text": "▶ Play on Scratch"
+        }
+      ]
+    },
+    {
+      "place": 6,
+      "img_url": "GigaLostInSpace.png",
+      "project_type": "Scratch",
+      "name": "⚠️ Giga загубився у космосі",
+      "desc": "Платформер у Scratch, де потрібно втекти з космосу та вижити серед ворогів.",
+      "tags": ["Scratch", "Outdated", "2D", "Platformer", "UA ⚠️"],
+      "buttons": [
+        {
+          "href": "https://scratch.mit.edu/projects/1264371862/",
+          "type": "primary",
+          "button_text": "▶ Play on Scratch"
+        }
+      ]
+    }
+  ]
+}
