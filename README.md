@@ -4,6 +4,9 @@ Welcome to my programming portfolio!
 
 I'm **Matviy_7878**, a student and programmer interested in web development, game development, and creative programming projects.
 
+⚠️ WARNING: THIS PAGE CONTAINS UKRAINIAN LANGUAGE! 🇺🇦
+If you don't understand Ukrainian, please use a translator to translate the page.
+
 ## 🚀 About Me
 
 I enjoy creating websites, games, interactive projects, and experiments using different technologies.
