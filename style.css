@@ -479,3 +479,201 @@ footer {
     gap: 10px;
     flex-wrap: wrap;
 }
+
+.github-card {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 17px;
+}
+
+.github-head {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.github-head img, #githubAvatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+}
+
+#githubAvatar {
+    width: 65px;
+    height: 65px;
+}
+
+.github-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.github-details div {
+  padding: 13px;
+  background: var(--surface-2);
+  border-radius: 10px;
+}
+
+.github-details span,
+.github-note {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.github-details strong {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.status {
+  margin-left: auto;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-weight: 700;
+}
+
+.status.active {
+  color: #4ade80;
+}
+
+.error {
+  color: #f87171;
+}
+
+.project-image.is-fallback {
+  color: white;
+  font-size: 5rem;
+  font-weight: 800;
+  text-shadow: 0 3px 10px #0005;
+}
+
+@media (max-width: 850px) {
+  .github-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #8b5cf6 #161b2239;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161b22;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a78bfa, #7c3aed);
+  border-radius: 10px;
+  border: 2px solid #161b22;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #c4b5fd, #8b5cf6);
+}
+
+::-webkit-scrollbar-corner {
+  background: #161b22;
+}
+
+.github-project-image {
+  background: linear-gradient(45deg, #7c3aed, #2563eb);
+  color: white;
+  font-size: 5rem;
+  font-weight: 800;
+  text-shadow: 0 3px 10px #0005;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  height: 300px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.project-image {
+  width: 280px;
+  height: 300px;
+  border-right: 1px solid var(--border);
+}
+
+.project-image img {
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-content {
+  min-width: 0;
+  height: 300px;
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content h3 {
+  margin: 6px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-content p {
+  margin: 0;
+  display: -webkit-box;
+    line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-tags {
+  margin: 12px 0;
+  max-height: 30px;
+  overflow: hidden;
+}
+
+.project-buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    height: 430px;
+  }
+
+  .project-image,
+  .project-image img {
+    width: 100%;
+    height: 180px;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .project-content {
+    height: 250px;
+  }
+}
